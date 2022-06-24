@@ -98,7 +98,7 @@ a:hover {
   background-image: linear-gradient(to right, rgb(14, 10, 63), rgb(0, 0, 0));
   display: flex;
   flex: 1;
-  padding: 10px;
+  padding: 3rem; 
 }
 
 .my-work-content {
@@ -106,11 +106,18 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px;
+  padding: 6rem;
 }
 
 .personal-photo img {
   height: 94vh;
   width: auto;
   object-fit: cover;
+}
+
+.catGif {
+  width: auto;
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
 }
