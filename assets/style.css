@@ -12,6 +12,8 @@ header {
   align-items: center;
   padding: 12px;
   background-image: linear-gradient(to right, rgb(14, 10, 63), rgb(0, 0, 0));
+  width: 100%;
+  position: fixed;
 }
 
 nav {
@@ -73,7 +75,7 @@ a:hover {
 
 #about-me {
   background-color: rgb(2, 2, 2);
-  height: 94vh;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -98,26 +100,53 @@ a:hover {
   background-image: linear-gradient(to right, rgb(14, 10, 63), rgb(0, 0, 0));
   display: flex;
   flex: 1;
-  padding: 3rem; 
+  padding: 1rem; 
+  flex-wrap: wrap;
 }
 
-.my-work-content {
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.project-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
 }
 
 .personal-photo img {
-  height: 94vh;
+  height: 100vh;
   width: auto;
   object-fit: cover;
 }
 
-.catGif {
+.project-image {
   width: auto;
   height: 100%;
-  overflow: hidden;
-  padding: 0;
+  
+}
+
+.project-image:hover {
+  opacity: .5;
+}
+
+.contact-me-container {
+  background-color: black;
+  display: flex;
+  flex: 1;
+  padding: 3rem; 
+}
+
+.contact-me-container h2 {
+ display: flex;
+ justify-content: center;
+  
+}
+
+.contact-me-container ul li {
+  display: inline;
 }
