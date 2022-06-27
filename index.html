@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gustavo's Portfolio</title>
+  <link rel="stylesheet" href="./assets/reset.css">
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 
@@ -14,10 +15,11 @@
     <h1>Gustavo Higuera</h1>
     <nav>
       <li><a href="#about-me>">About Me</a></li>
-      <li><a href="#my-work">My Work</a></li>
+      <li><a href="#my-projects">My Projects</a></li>
       <li><a href="#contact-me">Contact Me</a></li>
     </nav>
   </header>
+
   <section class="flex-container">
     <div id="about-me" class="flex-item1">
       <h2>
@@ -28,19 +30,20 @@
         Please take a look around my portfolio to see some of the projects I have created.
       </p>
     </div>
-    <div class="personal-photo">
-      <figure class="flex-item2">
+    <div>
+      <figure class="personal-photo">
         <img src="./assets/images/IMG_9998.jpg" alt="This is a photo of me, Gustavo Higuera">
       </figure>
     </div>
     <!-- This is creating a break in the HTML so that the flex item can move onto a new line  -->
     <div class="break"></div>
-    <div id="my-work" class="my-work-container">
+  </section>
 
+  <section class="flex-container">
+    <div id="my-projects" class="projects">
       <div class="project-content">
         <a href="https://www.youtube.com/watch?v=xSE9Qk9wkig" target="_blank">
           <img class="project-image" src="./assets/images/placeholder-image.png" alt="Placeholder"></a>
-        <!-- <div class="my-work-content"> -->
         <div class="project-text">
           <h3>
             Placeholder Project
@@ -61,7 +64,6 @@
       <div class="project-content">
         <a href="https://www.youtube.com/watch?v=xSE9Qk9wkig" target="_blank">
           <img class="project-image" src="./assets/images/placeholder-image.png" alt="Placeholder"></a>
-        <!-- <div class="my-work-content"> -->
         <div class="project-text">
           <h3>
             Placeholder Project
@@ -82,7 +84,6 @@
       <div class="project-content">
         <a href="https://www.youtube.com/watch?v=xSE9Qk9wkig" target="_blank">
           <img class="project-image" src="./assets/images/placeholder-image.png" alt="Placeholder"></a>
-        <!-- <div class="my-work-content"> -->
         <div class="project-text">
           <h3>
             Placeholder Project
@@ -100,35 +101,27 @@
         </div>
       </div>
     </div>
-
   </section>
 
-  <section>
-    <div id="#contact-me">
-      <div class="contact-me-container">
-        <div class="contact-me-content">
-          <h2>How to Contact Me</h2>
-          <form id="contact-form">
-            <input type="text" placeholder="Please enter your full name" name="name" id="name">
-            <input type="text" placeholder="Please enter your email address" name="email" id="email">
-            <input type="text" placeholder="Subject" name="subject" id="subject">
-            <textarea placeholder="Your message"></textarea>
-            <button type="submit" form="contact-form" value="Submit">Submit</button>
-          </form>
-          <ul class="social-list">
-            <li><a href="https://www.linkedin.com/in/gustavo-higuera-80322315b/" target="_blank"><img
-                  src="./assets/images/linkedin.png" class="social-links"> </a></li>
-
-            <li><a href="https://github.com/Gustavo-Higuera" target="_blank"><img src="./assets/images/github.png"
-                  class="social-links"></a>
-            </li>
-          </ul>
-        </div>
+  <section class="flex-container">
+    <div id="#contact-me" class="contact-me-container">
+      <div class="contact-me-content">
+        <h2>How to Contact Me</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Please enter your full name" name="name" id="name">
+          <input type="text" placeholder="Please enter your email address" name="email" id="email">
+          <input type="text" placeholder="Subject" name="subject" id="subject">
+          <textarea placeholder="Your message"></textarea>
+          <button type="submit" form="contact-form" value="Submit">Submit</button>
+        </form>
+        <ul class="social-links">
+          <li><a href="https://www.linkedin.com/in/gustavo-higuera-80322315b/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/Gustavo-Higuera" target="_blank">GitHub</a></li>
+        </ul>
       </div>
     </div>
 
   </section>
-
 </body>
 
 </html>
