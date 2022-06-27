@@ -108,10 +108,20 @@
       <div class="contact-me-container">
         <div class="contact-me-content">
           <h2>How to Contact Me</h2>
-          <ul>
-            <li><a href="mailto:gustavohiguera9715@gmail.com" target="_blank">Email</a></li>
-            <li><a href="https://www.linkedin.com/in/gustavo-higuera-80322315b/" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/Gustavo-Higuera" target="_blank">GitHub</a></li>
+          <form id="contact-form">
+            <input type="text" placeholder="Please enter your full name" name="name" id="name">
+            <input type="text" placeholder="Please enter your email address" name="email" id="email">
+            <input type="text" placeholder="Subject" name="subject" id="subject">
+            <textarea placeholder="Your message"></textarea>
+            <button type="submit" form="contact-form" value="Submit">Submit</button>
+          </form>
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/in/gustavo-higuera-80322315b/" target="_blank"><img
+                  src="./assets/images/linkedin.png" class="social-links"> </a></li>
+
+            <li><a href="https://github.com/Gustavo-Higuera" target="_blank"><img src="./assets/images/github.png"
+                  class="social-links"></a>
+            </li>
           </ul>
         </div>
       </div>

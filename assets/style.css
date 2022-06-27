@@ -138,15 +138,46 @@ a:hover {
   background-color: black;
   display: flex;
   flex: 1;
-  padding: 3rem; 
+  padding: 4rem; 
+  height: 50%;
+  justify-content: center;
 }
 
 .contact-me-container h2 {
  display: flex;
  justify-content: center;
-  
+ margin-bottom: 3rem;
 }
 
 .contact-me-container ul li {
   display: inline;
+}
+
+.social-links {
+  height: 200px;
+  width: 200px;
+}
+
+.social-list {
+  padding: 2rem;
+}
+
+input {
+  color: black;
+  padding: .5em;
+}
+
+textarea {
+  padding: 2rem;
+  color: black;
+}
+button {
+  color: black;
+  width: 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
