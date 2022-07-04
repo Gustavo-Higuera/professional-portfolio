@@ -68,7 +68,7 @@ a:hover {
 
 .personal-photo img {
   height: 100vh;
-  width: auto;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -144,10 +144,10 @@ textarea {
 
 .contact-me-container button {
   color: black;
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
   align-self: center;
-  width: 3%;
+  width: 90px;
   margin-top: 1rem;
   
 }
@@ -158,3 +158,20 @@ textarea {
   justify-content: center;
 
 }
+
+@media only screen and (max-width: 810px){
+  #about-me{
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+  }
+  .personal-photo{
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+
+  }
+  .project-content{
+    display: block;
+    text-align: center;
+  }
