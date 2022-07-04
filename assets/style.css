@@ -95,11 +95,16 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 4rem;
+}
+
+.project-text p {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .project-image {
-  width: auto;
+  width: 450px;
   height: 100%;
 
 }
@@ -149,7 +154,7 @@ textarea {
   align-self: center;
   width: 90px;
   margin-top: 1rem;
-  
+
 }
 
 .social-links {
@@ -159,19 +164,49 @@ textarea {
 
 }
 
-@media only screen and (max-width: 810px){
-  #about-me{
+@media only screen and (max-width: 810px) {
+  #about-me {
     display: flex;
     flex: 1 0 100%;
     flex-wrap: wrap;
   }
-  .personal-photo{
+
+  .personal-photo {
     display: flex;
     flex: 1 0 100%;
     flex-wrap: wrap;
 
   }
-  .project-content{
+
+  .project-content {
     display: block;
     text-align: center;
   }
+}
+
+@media only screen and (max-width: 465px) {
+  #about-me {
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+  }
+  #about-me h2 {
+    text-align: center;
+  }
+
+  .personal-photo {
+    display: flex;
+    flex: 1 0 100%;
+    flex-wrap: wrap;
+
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  input, textarea {
+    width: 100%;
+  }
+
+}
